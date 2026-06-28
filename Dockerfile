@@ -11,6 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY server.py .
 
-EXPOSE 5001
+EXPOSE 5002
 
-CMD ["gunicorn", "-b", "0.0.0.0:5001", "--timeout", "300", "server:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:5002", "--timeout", "300", "server:app"]
